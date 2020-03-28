@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_Level3">
+   <children>
+      <ImageView fitHeight="717.0" fitWidth="1049.0" layoutX="-141.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/d7b49634-fb86-4b2c-a571-224d8b7c9096.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="315.0" layoutX="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/CardBox.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="36.0" layoutX="116.0" layoutY="6.0" onDragDropped="#Switch_To_PeaShooter_Gif" onMouseReleased="#Switch_To_PeaShooter_Gif" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/card_peashooter.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="36.0" layoutX="158.0" layoutY="5.0" onDragDropped="#Switch_to_Sunflower" onMouseReleased="#Switch_to_Sunflower" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/card_sunflower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="36.0" layoutX="196.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/card_cherrybomb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="81.0" layoutX="94.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/Lawn_mower_2.PNG.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="81.0" layoutX="94.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/Lawn_mower_2.PNG.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="81.0" layoutX="94.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/Lawn_mower_2.PNG.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Sun_1" fitHeight="50.0" fitWidth="57.0" layoutX="282.0" layoutY="-288.0" onMouseClicked="#collect_1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Sun_2" fitHeight="42.0" fitWidth="43.0" layoutX="469.0" layoutY="-230.0" onMouseClicked="#collect_2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Sun_6" fitHeight="42.0" fitWidth="43.0" layoutX="629.0" layoutY="-96.0" onMouseClicked="#collect_6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombie2" fitHeight="162.0" fitWidth="129.0" layoutX="947.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/Zombie.gif" />
+         </image>
+      </ImageView>
+      <Text fx:id="SunCounter" layoutX="65.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100" />
+      <ImageView fx:id="zombie" fitHeight="116.0" fitWidth="114.0" layoutX="1041.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/tenor.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="Save_Button" layoutX="697.0" layoutY="49.0" mnemonicParsing="false" text="Save" />
+      <Button layoutX="769.0" layoutY="49.0" mnemonicParsing="false" text="Exit" />
+   </children>
+</AnchorPane>
