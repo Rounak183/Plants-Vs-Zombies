@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_game">
+   <children>
+      <ImageView fitHeight="678.0" fitWidth="907.0" layoutX="-1.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/mainBG.png" />
+         </image>
+      </ImageView>
+      <ProgressBar layoutX="526.0" layoutY="32.0" prefWidth="200.0" progress="0.38" />
+      <ImageView fx:id="Pea_card" fitHeight="87.0" fitWidth="55.0" layoutX="106.0" layoutY="14.0" onKeyPressed="#Move" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/card_peashooter.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Sunflower_card" fitHeight="77.0" fitWidth="74.0" layoutX="167.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/card_sunflower.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombie" fitHeight="135.0" fitWidth="146.0" layoutX="714.0" layoutY="156.0" onKeyPressed="#Move" onMouseClicked="#Move" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/tenor.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="111.0" layoutX="-41.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/Lawn_mower_2.PNG.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="111.0" layoutX="-41.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/Lawn_mower_2.PNG.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Landmower1" fitHeight="89.0" fitWidth="111.0" layoutX="-41.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/Lawn_mower_2.PNG.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="status" layoutX="33.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="200" wrappingWidth="73.88888549804688">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <ImageView fitHeight="76.0" fitWidth="74.0" layoutX="57.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/peashooter.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pea" fitHeight="24.0" fitWidth="21.0" layoutX="120.0" layoutY="325.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/pea.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun" fitHeight="88.0" fitWidth="55.0" layoutX="336.0" layoutY="-53.0" onMouseClicked="#collect" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/sun.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="538.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Progress Bar">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="SaveGame_Button" layoutX="746.0" layoutY="49.0" mnemonicParsing="false" onAction="#Switch_To_MainSave" text="Save" />
+      <Button fx:id="ExitGame_Button" layoutX="816.0" layoutY="49.0" mnemonicParsing="false" onAction="#Switch_To_Main" text="Exit" />
+   </children>
+</AnchorPane>

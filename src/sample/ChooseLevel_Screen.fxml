@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_LevelMenu">
+   <children>
+      <AnchorPane layoutX="133.0" layoutY="125.0" />
+      <ImageView fitHeight="1627.0" fitWidth="1143.0" layoutX="-28.0" layoutY="-595.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PvZ_img/ChooseLevelWallpaper.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="244.0" layoutY="40.0" prefHeight="401.0" prefWidth="413.0">
+         <children>
+            <Label alignment="CENTER" graphicTextGap="0.0" layoutX="82.0" layoutY="14.0" prefHeight="68.0" prefWidth="249.0" text="CHOOSE LEVEL" textFill="#fafcf9f7">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="Level1_Button" layoutX="176.0" layoutY="111.0" mnemonicParsing="false" onAction="#Switch_To_Level1" text="Level 1" />
+            <Button fx:id="Level2_Button" layoutX="176.0" layoutY="162.0" mnemonicParsing="false" onAction="#Switch_To_Level2" text="Level 2" />
+            <Button fx:id="Level3_Button" layoutX="176.0" layoutY="215.0" mnemonicParsing="false" onAction="#Switch_To_Level3" text="Level 3" />
+            <Button fx:id="Level4_Button" layoutX="176.0" layoutY="272.0" mnemonicParsing="false" onAction="#Switch_To_OtherLevels" text="Level 4" />
+            <Button fx:id="Level5_Button" layoutX="176.0" layoutY="335.0" mnemonicParsing="false" onAction="#Switch_To_OtherLevels" text="Level 5" />
+         </children>
+      </Pane>
+      <Button fx:id="GoBack_Button" layoutX="733.0" layoutY="51.0" mnemonicParsing="false" onAction="#Switch_To_Load" text="Go Back!" />
+   </children>
+</AnchorPane>
